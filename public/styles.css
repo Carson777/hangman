@@ -1,0 +1,10 @@
+.progressArea{
+	display: flex;
+}
+.letter{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.info{
+	border: solid black 2px;
+}

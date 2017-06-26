@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href="styles.css">
+  </head>
+  <body>
+    <form action='/startGame' method='get'>
+      <button type="submit">Start New Game</button>
+    </form>
+    <div class='info'>
+      <p>Remaining Guesses: {{remainingGuesses}}</p>
+      <p>Previous incorrect guesses: {{incorrectGuesses}} </p>
+    </div>
+    <div class="progressArea">
+      {{#progress}}
+      <h1 class="letter">{{.}}</h1>
+      {{/progress}}
+    </div>
+    <form action="/" method='post'>
+    <p>{{message}}</p>
+    <p>Type your letter below</p>
+      <input type='text' name="guess">
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
